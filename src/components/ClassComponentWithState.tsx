@@ -4,12 +4,10 @@ type State = {
   count: number;
 }
 
-class ClassComponentWithState extends Component<{}, State> {
-  constructor(props: {}) {
+class ClassComponentWithState extends Component<object, State> {
+  constructor(props: object) {
     super(props);
-    this.state = {
-      count: 0,
-    };
+    this.state = { count: 0 };
   }
 
   increase = () => {
