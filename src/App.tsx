@@ -27,6 +27,7 @@ import ExamplesPage from "./pages/ExamplesPage.tsx";
 import RouterExamplesLayout from "./components/RouterExamplesLayout";
 import AutoRedirectPage from "./pages/AutoRedirectPage.tsx";
 import NotFoundPage from "./pages/NotFoundPage.tsx";
+import FocusInput from "./components/FocusInput.tsx";
 
 function App() {
 
@@ -67,7 +68,8 @@ function App() {
           <Routes>
             <Route element={<RouterLayout />}>
               {/*<Route path="/" element={<HomePage />}/>*/}
-              <Route index element={<HomePage />}/>
+              {/*<Route index element={<HomePage />}/>*/}
+              <Route index element={<FocusInput />}/>
               <Route path="users/:userId" element={<UserPage />}/>
               <Route path="users" element={<UserPage />}/>
             </Route>
